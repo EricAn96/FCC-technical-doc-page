@@ -1,0 +1,95 @@
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 7fr;
+
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid;
+  border-color: grey;
+  height: 100vh;
+  gap: 3px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position: sticky;
+  top: 0;
+}
+
+.nav-link {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  width: auto;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid;
+  border-color: black;
+}
+nav > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 20px 20px 20px;
+  background-color: rgba(255, 255, 0, 0.11);
+  line-height: 30px;
+}
+
+main > section > header {
+  font-size: 30px;
+  font-weight: 30;
+}
+
+main > section > code {
+  background-color: rgba(161, 161, 161, 0.247);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+/* below codes are for mobile */
+
+@media (max-width: 800px) {
+  .container {
+    display: block;
+  }
+
+  nav {
+  height: 220px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position: static;
+  overflow-y: auto;
+  border-right: 0;
+  border-bottom: 1.5px solid;
+  border-color: black;
+  }
+
+  .nav-link {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid;
+    border-color: black;
+  }
+
+  main {
+    padding: 20px 10px 10px 10px;
+    margin: 0;
+  }
+
+}
